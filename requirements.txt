@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+redis
+neo4j
+python-dotenv
