@@ -1,8 +1,6 @@
 from fastapi import FastAPI
+from src.api.routes import router
 
 app = FastAPI()
 
-@app.get("/")
-def read_root():
-    return {"message": "Sales Proposal AI Running"}
-
+app.include_router(router)
