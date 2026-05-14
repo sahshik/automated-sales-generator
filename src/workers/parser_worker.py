@@ -2,6 +2,8 @@ import time
 
 from src.db.redis_client import r
 
+print("Worker started...")
+
 while True:
 
     task = r.rpop("parsing_queue")

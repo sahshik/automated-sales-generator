@@ -20,3 +20,13 @@ def cache_test():
     return {
         "cached_value": value
     }
+@router.get("/redis-test")
+def redis_test():
+
+    r.set("hello", "world")
+
+    value = r.get("hello")
+
+    return {
+        "redis_value": value
+    }
