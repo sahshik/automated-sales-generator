@@ -1,9 +1,6 @@
 from fastapi import FastAPI
-from src.api.routes import router
+from src.api.router import router
 
-app = FastAPI(
-    title="Sales Proposal AI",
-    version="1.0.0"
-)
+app = FastAPI()
 
 app.include_router(router)
